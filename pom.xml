@@ -19,6 +19,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modules>
 		<module>activemq-equinox-sample-target-platform</module>
 		<module>activemq-p2-repo</module>
+		<module>broker-bundle</module>
 	</modules>
 
 	<build>
