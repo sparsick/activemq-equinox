@@ -18,7 +18,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modules>
 		<module>activemq-equinox-sample-target-platform</module>
-		<module>activemq-p2-repo</module>
+		<!-- <module>activemq-p2-repo</module> -->
 		<module>broker-bundle</module>
 	</modules>
 
@@ -53,5 +53,30 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 			</plugins>
 		</pluginManagement>
 	</build>
+
+	<repositories>
+		<repository>
+			<id>equinox</id>
+			<layout>p2</layout>
+			<url>http://download.eclipse.org/eclipse/updates/4.7</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>activemq</id>
+			<layout>p2</layout>
+			<url>file://${project.basedir}}/../activemq-p2-repo/target/repository</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
 
 </project>
