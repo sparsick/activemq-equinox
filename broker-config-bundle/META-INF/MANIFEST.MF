@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Broker-config-bundle
+Bundle-SymbolicName: broker-config-bundle
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: broker.config.bundle.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package:  org.apache.log4j,
+ org.osgi.framework;version="1.3.0",
+ org.osgi.service.cm
+Bundle-ActivationPolicy: lazy
